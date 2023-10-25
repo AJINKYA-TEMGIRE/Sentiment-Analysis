@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body{
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .heading{
+            font-size: xx-large;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .get textarea{
+            border: 2px solid black;
+            margin: 20px 520px;
+            font-size:x-large;
+        }
+        .get input{
+            margin: 0px 650px;
+            font-size: larger;
+        }
+        .answer{
+
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+        <h1>Sentiment Analysis</h1>
+    </div>
+    <div class="get">
+        <form action="/predict" method="post">
+            <textarea name="sentiment"cols="30" rows="5"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <div class="answer">
+        {% if result %}
+        <h2 style="color:black">{{result}}</h2>
+        {% endif %}
+    </div>
+
+
+</body>
+</html>
